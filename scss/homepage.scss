@@ -1,0 +1,66 @@
+
+.homepage {
+  overflow: hidden;
+  font-family: 'Fira Sans', sans-serif;
+
+  .header {
+
+    &__background {
+      
+      height: 800px;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        border-radius: 100%;
+        position: absolute;
+        background: linear-gradient(127.58deg, #745EFF 38.36%, #4B22BE 103.21%);
+        right: -400px;
+        left: -400px;
+        top: -200px;
+        content: '';
+        bottom: 0;
+        z-index: -1;
+      }
+
+      @include screen-sm {
+        height: 1000px;
+      }
+    }
+
+    &__image {
+      position: absolute;
+      right: 0px;
+      top: 100px;
+      width: 50%;
+      max-width: 500px;
+
+      @include screen-sm {
+        position: relative;
+        width: 80%;
+        top: 0px
+
+      }
+
+    }
+
+    &__title {
+      font-weight: 300;
+      font-size: 65px;
+      line-height: 70px;
+      letter-spacing: -0.02em;
+      max-width: 500px;
+      color: $white;
+      margin-top: 100px;
+    }
+
+    &__subtitle {
+      max-width: 633px;
+      color: $white;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+    }
+  }
+}
