@@ -7354,6 +7354,20 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   scroll-behavior: smooth; }
 
+.nav-padding {
+  padding: 20px 30px; }
+  @media (max-width: 768px) {
+    .nav-padding {
+      padding: 20px 15px; } }
+
+.section-medium {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  @media (max-width: 768px) {
+    .section-medium {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+
 .homepage {
   overflow: hidden;
   font-family: 'Fira Sans', sans-serif; }
@@ -7430,6 +7444,20 @@ html {
     letter-spacing: -0.02em;
     color: #001767;
     margin-top: 20px; }
+  .homepage .sync__title {
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #001767; }
+  .homepage .sync__subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #001767;
+    margin-top: 30px;
+    max-width: 713px; }
 
 .btn-white {
   color: #fff;
@@ -7437,8 +7465,59 @@ html {
   border: 1px solid #fff;
   border-radius: 3px;
   width: 151px;
-  height: 40px; }
+  height: 40px;
+  font-size: 16px;
+  letter-spacing: -0.02em; }
   .btn-white:hover {
-    color: #745EFF;
+    color: #4B22BE;
     text-decoration: none;
     background-color: #fff; }
+
+.btn-shamrock {
+  color: #212529;
+  background-color: #45CDAC;
+  border-color: #45CDAC;
+  color: #fff !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 210px;
+  padding: 0 20px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.02em; }
+  .btn-shamrock:hover {
+    color: #fff;
+    background-color: #32ba99;
+    border-color: #2fb091; }
+  .btn-shamrock:focus, .btn-shamrock.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(69, 205, 172, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(69, 205, 172, 0.5); }
+  .btn-shamrock.disabled, .btn-shamrock:disabled {
+    color: #212529;
+    background-color: #45CDAC;
+    border-color: #45CDAC; }
+  .btn-shamrock:not(:disabled):not(.disabled):active, .btn-shamrock:not(:disabled):not(.disabled).active,
+  .show > .btn-shamrock.dropdown-toggle {
+    color: #fff;
+    background-color: #32ba99;
+    border-color: #2fb091; }
+    .btn-shamrock:not(:disabled):not(.disabled):active:focus, .btn-shamrock:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-shamrock.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(69, 205, 172, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(69, 205, 172, 0.5); }
+  .btn-shamrock:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer; }

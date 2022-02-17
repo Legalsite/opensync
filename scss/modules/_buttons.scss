@@ -6,10 +6,33 @@
   border-radius: 3px;
   width: 151px;
   height: 40px;
+  font-size: 16px;
+  letter-spacing: -0.02em;
 
   &:hover {
-    color: #745EFF;
+    color: #4B22BE;
     text-decoration: none;
     background-color: $white;
+  }
+}
+
+.btn-shamrock {
+  @include button-variant($shamrock, $shamrock, $active-background: darken($shamrock, 7.5%), $active-border: darken($shamrock, 10%));
+  color: $white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: max-content;
+  min-width: 210px;
+  padding: 0 20px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
