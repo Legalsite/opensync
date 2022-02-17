@@ -7371,10 +7371,21 @@ html {
 .bg-majorelle-blue {
   background-color: #6141DF; }
 
-.bg-gradient {
+.bg-gradient-blue {
   background: -webkit-linear-gradient(352.45deg, #755EFF 0%, #5936D3 113.96%);
   background: -o-linear-gradient(352.45deg, #755EFF 0%, #5936D3 113.96%);
   background: linear-gradient(97.55deg, #755EFF 0%, #5936D3 113.96%); }
+
+.bg-gradient-gray {
+  background: -webkit-linear-gradient(75.08deg, rgba(255, 255, 255, 0) 10.52%, #45CDAC 231.9%);
+  background: -o-linear-gradient(75.08deg, rgba(255, 255, 255, 0) 10.52%, #45CDAC 231.9%);
+  background: linear-gradient(14.92deg, rgba(255, 255, 255, 0) 10.52%, #45CDAC 231.9%); }
+
+.bg-dark {
+  background: #404247; }
+
+.text-white {
+  color: #fff; }
 
 .content-center {
   display: -webkit-box;
@@ -7507,6 +7518,68 @@ html {
     letter-spacing: -0.02em;
     color: #fff;
     text-align: center; }
+  .homepage .flag__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #333333;
+    text-align: center; }
+  .homepage .flag__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px; }
+  .homepage .flag__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #333333;
+    text-align: center; }
+  .homepage .footer {
+    padding: 60px 40px;
+    background: #404247;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media (max-width: 768px) {
+      .homepage .footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
+    .homepage .footer__logo {
+      width: 92px;
+      height: 21px; }
+    .homepage .footer__bullet {
+      color: #fff;
+      font-size: 18px; }
+      @media (max-width: 768px) {
+        .homepage .footer__bullet {
+          margin-top: 10px; } }
+    .homepage .footer__link {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      color: #fff;
+      margin-bottom: 0px; }
+      @media (max-width: 768px) {
+        .homepage .footer__link {
+          margin-top: 10px; } }
+      .homepage .footer__link:hover {
+        text-decoration: none; }
 
 .btn-white {
   color: #fff;

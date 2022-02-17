@@ -46,8 +46,20 @@ html { scroll-behavior: smooth; }
   background-color: $majorelle-blue;
 }
 
-.bg-gradient {
+.bg-gradient-blue {
   background: linear-gradient(97.55deg, #755EFF 0%, #5936D3 113.96%);
+}
+
+.bg-gradient-gray {
+  background: linear-gradient(14.92deg, rgba(255, 255, 255, 0) 10.52%, #45CDAC 231.9%);
+}
+
+.bg-dark {
+  background: #404247;
+}
+
+.text-white {
+  color: $white;
 }
 
 .content-center {

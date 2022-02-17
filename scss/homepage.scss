@@ -163,4 +163,79 @@
       text-align: center;
     }
   }
+
+  .flag {
+    &__text {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: #333333;
+      text-align: center;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: #333333;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    &__subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      color: #333333;
+      text-align: center;
+    }
+  }
+
+  .footer {
+
+    padding: 60px 40px;
+    background: #404247;
+    display: flex;
+    justify-content: space-between;
+
+    @include screen-sm {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__logo {
+      width: 92px;
+      height: 21px;
+    }
+
+    &__bullet {
+      color: $white;
+      font-size: 18px;
+
+      @include screen-sm {
+        margin-top: 10px;
+      }
+    }
+
+    &__link {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      color: $white;
+      margin-bottom: 0px;
+
+      @include screen-sm {
+        margin-top: 10px;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
