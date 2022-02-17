@@ -41,3 +41,17 @@ html { scroll-behavior: smooth; }
     padding-bottom: 50px;
   }
 }
+
+.bg-majorelle-blue {
+  background-color: $majorelle-blue;
+}
+
+.bg-gradient {
+  background: linear-gradient(97.55deg, #755EFF 0%, #5936D3 113.96%);
+}
+
+.content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
