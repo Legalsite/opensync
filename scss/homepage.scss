@@ -176,22 +176,24 @@
 
     &__title {
       font-weight: 500;
-      font-size: 20px;
-      line-height: 28px;
+      font-size: 35px;
+      line-height: 40px;
       letter-spacing: -0.02em;
       color: #333333;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 15px;
       margin-bottom: 5px;
+      font-family: 'Bookmania Semibold' !important;
     }
 
     &__subtitle {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 18px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
       letter-spacing: -0.02em;
       color: #333333;
       text-align: center;
+      font-family: 'Bookmania Semibold' !important;
     }
   }
 

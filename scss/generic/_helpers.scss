@@ -22,6 +22,11 @@
 	}
 }
 
+@font-face {
+  font-family: 'Bookmania Semibold';
+  src: url('../../fonts/bookmania-semibold.otf') format('opentype');
+};
+
 html { scroll-behavior: smooth; }
 
 .nav-padding {

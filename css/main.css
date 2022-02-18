@@ -7351,6 +7351,10 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+@font-face {
+  font-family: 'Bookmania Semibold';
+  src: url("../../fonts/bookmania-semibold.otf") format("opentype"); }
+
 html {
   scroll-behavior: smooth; }
 
@@ -7527,20 +7531,22 @@ html {
     text-align: center; }
   .homepage .flag__title {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 35px;
+    line-height: 40px;
     letter-spacing: -0.02em;
     color: #333333;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 5px; }
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Bookmania Semibold' !important; }
   .homepage .flag__subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
     letter-spacing: -0.02em;
     color: #333333;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Bookmania Semibold' !important; }
   .homepage .footer {
     padding: 60px 40px;
     background: #404247;
