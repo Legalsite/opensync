@@ -1,0 +1,7 @@
+.homepage {
+  overflow: hidden; }
+  .homepage .header__background {
+    background: -webkit-linear-gradient(322.42deg, #745EFF 38.36%, #4B22BE 103.21%);
+    background: -o-linear-gradient(322.42deg, #745EFF 38.36%, #4B22BE 103.21%);
+    background: linear-gradient(127.58deg, #745EFF 38.36%, #4B22BE 103.21%);
+    min-height: 900px; }

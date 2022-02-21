@@ -1,0 +1,74 @@
+@mixin screen-lg {
+	@media (max-width: $media-lg) {
+		@content;
+	}
+}
+
+@mixin screen-md {
+	@media (max-width: $media-md) {
+		@content;
+	}
+}
+
+@mixin screen-sm {
+	@media (max-width: $media-sm) {
+		@content;
+	}
+}
+
+@mixin screen-xs {
+	@media (max-width: $media-xs) {
+		@content;
+	}
+}
+
+@font-face {
+  font-family: 'Bookmania Semibold';
+  src: url('../../fonts/bookmania-semibold.otf') format('opentype');
+};
+
+html { scroll-behavior: smooth; }
+
+.nav-padding {
+  padding: 20px 30px;
+
+  @include screen-sm {
+    padding: 20px 15px;
+  }
+}
+
+.section-medium {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include screen-sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.bg-majorelle-blue {
+  background-color: $majorelle-blue;
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(97.55deg, #755EFF 0%, #5936D3 113.96%);
+}
+
+.bg-gradient-gray {
+  background: linear-gradient(14.92deg, rgba(255, 255, 255, 0) 10.52%, #45CDAC 231.9%);
+}
+
+.bg-dark {
+  background: #404247;
+}
+
+.text-white {
+  color: $white;
+}
+
+.content-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
