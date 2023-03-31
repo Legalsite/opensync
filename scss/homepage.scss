@@ -7,7 +7,7 @@
 
     &__background {
       
-      height: 800px;
+      height: 700px;
       position: relative;
       overflow: hidden;
 
@@ -15,17 +15,21 @@
         border-radius: 100%;
         position: absolute;
         background: linear-gradient(127.58deg, #745EFF 38.36%, #4B22BE 103.21%);
-        right: -400px;
-        left: -400px;
+        border-radius: 0 0 70% 40%/0 0 90% 77%;
+        right: -200px;
+        left: -300px;
         top: -200px;
         content: '';
         bottom: 0;
         z-index: -1;
 
+        @include screen-sm {
+          border-radius: 0 0 70% 70%/0 0 90% 77%;
+        }
       }
 
       @include screen-sm {
-        height: 1000px;
+        height: 1100px;
       }
     }
 
@@ -46,16 +50,21 @@
 
     &__title {
       font-weight: 300;
-      font-size: 65px;
-      line-height: 70px;
+      font-size: 60px;
+      line-height: 68px;
       letter-spacing: -0.02em;
-      max-width: 600px;
+      max-width: 700px;
       color: $white;
       margin-top: 100px;
+
+      @include screen-sm {
+        font-size: 40px;
+      line-height: 52px;
+      }
     }
 
     &__subtitle {
-      max-width: 633px;
+      max-width: 690px;
       color: $white;
       font-weight: 300;
       font-size: 20px;
@@ -67,7 +76,8 @@
   .info {
 
     &__content {
-      margin-top: -120px;
+      margin-top: -50px;
+      margin-bottom: 100px;
 
       @include screen-sm {
         margin-top: 50px;
@@ -76,11 +86,11 @@
 
     &__box {
       width: 100%;
-      min-height: 318px;
-      box-shadow: 0px 5px 20px rgba(44, 55, 154, 0.25);
+      min-height: 340px;
+      box-shadow: 0px 5px 20px rgba(44, 55, 154, 0.1);
       border-radius: 5px;
       background-color: $white;
-      padding: 50px 40px 30px 30px;
+      padding: 50px 30px 30px 30px;
       margin-bottom: 30px;
     }
 
@@ -90,7 +100,7 @@
       line-height: 28px;
       letter-spacing: -0.02em;
       color: #001767;
-      margin-top: 50px;
+      margin-top: 30px;
     }
 
     &__subtitle {
@@ -100,14 +110,15 @@
       letter-spacing: -0.02em;
       color: #001767;
       margin-top: 20px;
+      max-width: 290px;
     }
   }
 
   .sync {
 
     &__title {
-      font-weight: normal;
-      font-size: 35px;
+      font-weight: 300;
+      font-size: 40px;
       line-height: 40px;
       letter-spacing: -0.02em;
       color: #001767;
@@ -120,7 +131,7 @@
       letter-spacing: -0.02em;
       color: #001767;
       margin-top: 30px;
-      max-width: 713px;
+      max-width: 733px;
     }
   }
 
@@ -132,26 +143,26 @@
       line-height: 40px;
       letter-spacing: -0.02em;
       color: $white;
-      max-width: 334px;
     }
 
     &__subtitle {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 24px;
       line-height: 28px;
       letter-spacing: -0.02em;
       color: $white;
       margin-bottom: 0px;
       margin-left: 20px;
+      
     }
 
     &__text {
       font-weight: 300;
-      font-size: 20px;
-      line-height: 28px;
+      font-size: 16px;
+      line-height: 22px;
       letter-spacing: -0.02em;
       color: $white;
-      max-width: 372px;
+      max-width: 531px;
       text-align: center;
     }
 
@@ -165,6 +176,56 @@
     }
   }
 
+  .welcome {
+    &__title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 45px;
+      letter-spacing: -0.02em;
+      color: #001767;
+      max-width: 367px;
+      margin-right: 50px;
+
+      @include screen-sm {
+        margin-right: 0px;
+        margin-left: 15px;
+      }
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: -0.02em;
+      color: #001767;
+    }
+
+    &__subtext {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: -0.02em;
+      color: #5A37D5;
+      max-width: 537px;
+    }
+
+    &__icon {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+
+    &__content {
+      margin-left: 80px;
+
+      @include screen-sm {
+        margin-left: 15px;
+      }
+    }
+  }
+
   .flag {
     &__text {
       font-weight: 300;
@@ -172,7 +233,11 @@
       line-height: 28px;
       letter-spacing: -0.02em;
       color: #333333;
-      text-align: center;
+      max-width: 430px;
+
+      span {
+        font-style: italic;
+      }
     }
 
     &__title {
@@ -181,10 +246,14 @@
       line-height: 40px;
       letter-spacing: -0.02em;
       color: #333333;
-      text-align: center;
       margin-top: 15px;
       margin-bottom: 5px;
       font-family: 'Bookmania Semibold' !important;
+    }
+
+    &__icon {
+      width: 200px;
+      object-fit: contain;
     }
 
     &__subtitle {
@@ -193,7 +262,6 @@
       line-height: 16px;
       letter-spacing: -0.02em;
       color: #333333;
-      text-align: center;
       font-family: 'Bookmania Semibold' !important;
     }
   }
