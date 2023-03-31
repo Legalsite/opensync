@@ -47,6 +47,16 @@ html { scroll-behavior: smooth; }
   }
 }
 
+.section-large {
+  padding-top: 140px;
+  padding-bottom: 200px;
+
+  @include screen-sm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 .bg-majorelle-blue {
   background-color: $majorelle-blue;
 }
@@ -61,6 +71,14 @@ html { scroll-behavior: smooth; }
 
 .bg-dark {
   background: #404247;
+}
+
+.bg-gray {
+  background: #F2F8FD;
+}
+
+.bg-light-gray {
+  background: #F8FCFF;
 }
 
 .text-white {

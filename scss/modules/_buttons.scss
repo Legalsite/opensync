@@ -4,7 +4,8 @@
   background-color: none;
   border: 1px solid $white;
   border-radius: 3px;
-  width: 151px;
+  width: max-content;
+  min-width: 210px;
   height: 40px;
   font-size: 16px;
   letter-spacing: -0.02em;
